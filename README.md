@@ -5,18 +5,16 @@ Visionary is a project developed and owned by Ege Güler. Copying and publishing
 Visionary let's buisness owners or personal users to manage their devices (mostly billboards) graphically. Sign up on "dash.visionaryux.digital" to start using! 
 
 # Installation && Usage
+Debian
 ```bash
-# Add Visionary to your repos
-echo "deb [trusted=yes] https://github.com/HarmonyGroup-Tech/VisionaryClient/tree/main/debian ./" | sudo tee /etc/apt/sources.list.d/visionary.list
-
-# Update your repos
-sudo apt update
-
+# Get the deb file
+wget https://github.com/HarmonyGroup-Tech/VisionaryClient/raw/main/debian/visionary_1.0-1_all.deb
 # Install Visionary
-sudo apt install visionary
+sudo dpkg -i visionary_1.0-1_all.deb
+# Collect the missing libraries.
+sudo apt-get install -f
 ```
-
-To start:
+To run:
 ```bash
 visionary
 ```
