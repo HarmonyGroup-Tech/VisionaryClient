@@ -5,8 +5,18 @@ Visionary is a project developed and owned by Ege Güler. Copying and publishing
 Visionary let's buisness owners or personal users to manage their devices (mostly billboards) graphically. Sign up on "dash.visionaryux.digital" to start using! 
 
 # Installation && Usage
-Install a release from VisionaryClient official git. Prefer the latest LTS release for the best performance.
+```bash
+# Add Visionary to your repos
+echo "deb [trusted=yes] https://github.com/HarmonyGroup-Tech/VisionaryClient/tree/main/debian ./" | sudo tee /etc/apt/sources.list.d/visionary.list
 
-Install the packages mentioned in requirements.txt via pip3.
+# Update your repos
+sudo apt update
 
-Run the main.py to start the program and follow the directions.
+# Install Visionary
+sudo apt install visionary
+```
+
+To start:
+```bash
+visionary
+```
