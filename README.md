@@ -8,7 +8,7 @@ Visionary let's buisness owners or personal users to manage their devices (mostl
 Debian
 ```bash
 # Get the deb file
-wget https://github.com/HarmonyGroup-Tech/VisionaryClient/raw/main/debian/visionary_1.0-1_all.deb
+wget https://github.com/HarmonyGroup-Tech/VisionaryClient/blob/main/visionary_1.0-1_all.deb
 # Install Visionary
 sudo dpkg -i visionary_1.0-1_all.deb
 # Collect the missing libraries.
